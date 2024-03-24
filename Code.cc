@@ -1,38 +1,37 @@
 void setup() { 
-// configure the output pins 
-pinMode(10,OUTPUT); // r
-pinMode(11,OUTPUT); // y
-pinMode(12,OUTPUT); // g
+pinMode(10,OUTPUT); 
+pinMode(11,OUTPUT); 
+pinMode(12,OUTPUT); 
 }
 void loop() 
 { 
-digitalWrite(12,HIGH); //red fopr 5 sec
+digitalWrite(12,HIGH); 
 delay(500);
-digitalWrite(12,LOW); //off red
+digitalWrite(12,LOW); 
 delay(1000);
-digitalWrite(10,HIGH); //y fopr 1 sec
+digitalWrite(10,HIGH); 
 delay(1000);
-digitalWrite(10,LOW); //off yellow
+digitalWrite(10,LOW); 
 delay(1000);
-digitalWrite(8,HIGH); //on green
+digitalWrite(8,HIGH);
 delay(5000);
-digitalWrite(8,LOW); //off green
+digitalWrite(8,LOW); 
 delay(500);//o.5 sec
 
-//blinking krao
-digitalWrite(8,HIGH); //on green 0.5sec //----------First time
+
+digitalWrite(8,HIGH); 
 delay(500);
-digitalWrite(8,LOW); //off green 0.5 sec
+digitalWrite(8,LOW); 
 delay(500);//o.5 sec
 
-digitalWrite(8,HIGH); //on green 0.5sec //-------second time
+digitalWrite(8,HIGH); 
 delay(500);
-digitalWrite(8,LOW); //off green 0.5 sec
-delay(500);//o.5 sec
+digitalWrite(8,LOW);
+delay(500);
 
-digitalWrite(8,HIGH); //on green 0.5sec //-----------thrid time
+digitalWrite(8,HIGH); 
 delay(500);
-digitalWrite(8,LOW); //off green 0.5 sec
+digitalWrite(8,LOW); 
 delay(500);//o.5 sec
 
 }
